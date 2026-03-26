@@ -1,3 +1,5 @@
+<img width="1376" height="768" alt="Gemini_Generated_Image_y2fy0ty2fy0ty2fy" src="https://github.com/user-attachments/assets/370c01f2-4168-4f5e-8aad-12fa2e24aaf0" />
+
 # API de Gestão de Produtos (Nodejs-Github-Copilot) 📦
 
 Este projeto foi desenvolvido em Node.js + Express como parte de um **bootcamp focado no uso de ferramentas de IA**, utilizando o **GitHub Copilot** para auxiliar na escrita, refatoração e estruturação do código. O objetivo principal é demonstrar a criação de uma API funcional para gerenciamento de produtos através de práticas modernas de desenvolvimento assistido.
