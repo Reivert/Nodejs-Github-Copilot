@@ -1,22 +1,54 @@
-# API RESTful de Produtos
+# API de Gestão de Produtos (Nodejs-Github-Copilot) 📦
 
-Projeto em Node.js + Express para gerenciar produtos com validações para criação, edição, detalhes e exclusão.
+Este projeto foi desenvolvido em Node.js + Express como parte de um **bootcamp focado no uso de ferramentas de IA**, utilizando o **GitHub Copilot** para auxiliar na escrita, refatoração e estruturação do código. O objetivo principal é demonstrar a criação de uma API funcional para gerenciamento de produtos através de práticas modernas de desenvolvimento assistido.
 
-## Instalação
+## 🚀 Sobre o Projeto
 
-1. Abra o terminal no diretório do projeto
-2. `npm install`
-3. `npm start`
+A aplicação é uma API RESTful simples que permite realizar o gerenciamento completo (CRUD) de produtos. 
 
-## Endpoints
+> **Nota de Persistência:** Para fins de estudo, a persistência de dados é feita **em memória** (através de um array no arquivo `productModel.js`). Isso significa que os dados são resetados sempre que o servidor for reiniciado.
 
-- `GET /products` - lista todos os produtos
-- `GET /products/:id` - detalhes do produto
-- `POST /products` - cria produto
-- `PUT /products/:id` - atualiza produto
-- `DELETE /products/:id` - remove produto
+## 🛠️ Tecnologias Utilizadas
 
-## Corpo JSON (POST / PUT)
+* **Node.js**: Ambiente de execução.
+* **Express**: Framework para construção da API.
+* **GitHub Copilot**: Assistente de IA utilizado no processo de desenvolvimento.
+
+## 📑 Endpoints da API
+
+Abaixo estão as rotas disponíveis no projeto:
+
+| Método | Endpoint | Descrição |
+| :--- | :--- | :--- |
+| **GET** | `/getAllProducts` | Retorna a lista de todos os produtos. |
+| **GET** | `/getProductById/:id` | Retorna os detalhes de um produto específico. |
+| **POST** | `/createProduct` | Cria um novo produto. |
+| **PUT** | `/updateProduct/:id` | Atualiza as informações de um produto existente. |
+| **DELETE** | `/deleteProduct/:id` | Remove um produto da lista. |
+
+## 🚦 Como Executar o Projeto
+
+1. **Clonar o repositório:**
+   ```Bash
+   git clone [https://github.com/Reivert/API-Nodejs-Github-Copilot.git](https://github.com/Reivert/API-Nodejs-Github-Copilot.git)
+
+2. **Instalar as dependências:**
+    ```Bash
+    npm install
+
+3. **Iniciar o servidor:**
+    ```Bash
+    npm start
+
+## 🧪 Testando com Postman
+
+Para facilitar os testes, o projeto inclui uma collection pronta:
+
+1. Localize o arquivo Products_API_Postman_Collection.json na raiz do projeto.
+2. Importe-o para o seu Postman.
+3. No Postman, configure a variável de ambiente {{baseUrl}} com o endereço do seu servidor local (ex: http://localhost:3000).
+
+### Corpo JSON (POST / PUT)
 
 {
   "name": "Nome do produto",
@@ -32,8 +64,5 @@ Projeto em Node.js + Express para gerenciar produtos com validações para cria�
 - quantity: obrigatório, inteiro, >= 0
 - description: opcional, string
 
-## Testes com Postman
+Desenvolvido por: Reivert Zulato.
 
-1. Inicie o servidor (`npm start`)
-2. Configure URL base `http://localhost:3000`
-3. Faça as requisições CRUD conforme endpoints
